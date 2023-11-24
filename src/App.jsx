@@ -8,8 +8,7 @@ import { EffectCube, Pagination } from "swiper/modules";
 import Sample1 from "../src/assets/Sample1.jpg";
 import Sample2 from "../src/assets/Sample2.jpg";
 import Sample3 from "../src/assets/Sample3.jpg";
-import logo from "../src/assets/logo.gif";
-import logoround from "../src/assets/logoround.gif";
+import finallogo from "../src/assets/finallogo.gif";
 import { motion } from "framer-motion";
 
 export default function App() {
@@ -26,11 +25,7 @@ export default function App() {
     <div className="overflow-hidden min-w-screen max-w-screen mini-h-screen max-h-screen">
       {loading ? (
         <div className="flex justify-center items-center w-screen h-screen">
-          <img src={logo} className="scale-y-150 absolute" />
-          <img
-            src={logoround}
-            className="absolute z-0 scale-125 mb-16"
-          />
+          <img src={finallogo} className="w-1/2 h-1/2 scale-150" />
         </div>
       ) : (
         <motion.div
@@ -59,10 +54,10 @@ export default function App() {
               <img className="w-screen h-screen " src={Sample2} />
             </SwiperSlide>
             <SwiperSlide>
-              <img className="w-screen h-screen " src={Sample3} />
+              <img className="w-screen h-screen " src={Sample1} />
             </SwiperSlide>
             <SwiperSlide>
-              <img className="w-screen h-screen " src={Sample1} />
+              <img className="w-screen h-screen " src={Sample3} />
             </SwiperSlide>
           </Swiper>
         </motion.div>
